@@ -1,0 +1,23 @@
+{
+  "name": "1_refactoring",
+  "version": "1.0.0",
+  "description": "Practica Refactoring de la semana 4",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node ./node_modules/jest/bin/jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanMorales26/1_Refactoring.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuanMorales26/1_Refactoring/issues"
+  },
+  "homepage": "https://github.com/JuanMorales26/1_Refactoring#readme"
+}
