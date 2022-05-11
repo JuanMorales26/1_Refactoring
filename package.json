@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/JuanMorales26/1_Refactoring/issues"
   },
-  "homepage": "https://github.com/JuanMorales26/1_Refactoring#readme"
+  "homepage": "https://github.com/JuanMorales26/1_Refactoring#readme",
+  "devDependencies": {
+    "jest": "^26.0.0"
+  }
 }
