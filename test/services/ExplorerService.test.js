@@ -14,7 +14,7 @@ describe("Unit test module for ExplorerService",() =>{
         console.log("Lista de explorers con filtro: ", user);
         for(var i = 0; i < user.length; i++){
            //console.log(user[i]);
-            expect(user[i].mission).toBe("Node2");
+            expect(user[i].mission).toBe("Node");
         }
         expect(user[0].name).toBe("Explorer1_Test");
         expect(user[1].name).toBe("Explorer5_Test");
