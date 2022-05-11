@@ -5,7 +5,7 @@
   "main": "index.js",
   "directories": {
     "lib": "lib",
-    "test": "test"
+    "test": "jest"
   },
   "scripts": {
     "test": "node ./node_modules/jest/bin/jest"
