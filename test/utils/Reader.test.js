@@ -10,7 +10,6 @@ describe("Unit test module for Reader",() =>{
         expect(test1[0].mission).toBe("node");
         expect(test1[0].stacks[0]).toBe("javascript");
         expect(test1[0].stacks[1]).toBe("reasonML");
-        expect(test1[0].stacks[2]).toBe("elm");
-        console.log("Explorers devueltos: ", test1);   
+        expect(test1[0].stacks[2]).toBe("elm"); 
     });
 })  

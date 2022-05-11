@@ -10,9 +10,7 @@ describe("Unit test module for FizzbuzzService",() =>{
         const explorer6 = {name: "Explorer6_Test", score: 20, mission: "Node"}
         const explorer7 = {name: "Explorer7_Test", score: 30, mission: "Java"}
         const explorerlist = [explorer1, explorer2, explorer3, explorer4, explorer5, explorer6, explorer7]
-        console.log("Lista de explorers sin filtro: ", explorerlist);
         const test1 = FizzbuzzService.applyValidationInExplorer(explorer1);
-        console.log("Explorers devuelto: ", test1);
         expect(test1.trick).toBe(2);
 
         const test2 = FizzbuzzService.applyValidationInExplorer(explorer2);

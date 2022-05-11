@@ -9,9 +9,7 @@ describe("Unit test module for ExplorerService",() =>{
         const explorer6 = {name: "Explorer6_Test", score: 20, mission: "Node"}
         const explorer7 = {name: "Explorer7_Test", score: 30, mission: "Java"}
         const explorerlist = [explorer1, explorer2, explorer3, explorer4, explorer5, explorer6, explorer7]
-        console.log("Lista de explorers sin filtro: ", explorerlist);
         const user = ExplorerService.filterByMission(explorerlist, "Node");
-        console.log("Lista de explorers con filtro: ", user);
         for(var i = 0; i < user.length; i++){
            //console.log(user[i]);
             expect(user[i].mission).toBe("Node");
@@ -32,9 +30,7 @@ describe("Unit test module for ExplorerService",() =>{
         const explorer6 = {name: "Explorer6_Test", score: 20, mission: "Node"}
         const explorer7 = {name: "Explorer7_Test", score: 30, mission: "Java"}
         const explorerlist = [explorer1, explorer2, explorer3, explorer4, explorer5, explorer6, explorer7]
-        console.log("Lista de explorers sin filtro: ", explorerlist);
         const amount_of_explorers_detected = ExplorerService.getAmountOfExplorersByMission(explorerlist, "Node");
-        console.log("Cantidad de explorers detectados ", amount_of_explorers_detected);
         expect(amount_of_explorers_detected).toBe(3);
         /**expect(user.user).toBe("JuanMorales26");
         expect(user.name).toBe("Juan Morales");
@@ -49,9 +45,7 @@ describe("Unit test module for ExplorerService",() =>{
         const explorer6 = {githubUsername: "Explorer6_Test", score: 20, mission: "Node"}
         const explorer7 = {githubUsername: "Explorer7_Test", score: 30, mission: "Java"}
         const explorerlist = [explorer1, explorer2, explorer3, explorer4, explorer5, explorer6, explorer7]
-        console.log("Lista de explorers sin filtro: ", explorerlist);
         const names_of_explorers_detected = ExplorerService.getExplorersUsernamesByMission(explorerlist, "Node");
-        console.log("Nombres de explorers detectados ", names_of_explorers_detected);
         expect(names_of_explorers_detected[0]).toBe("Explorer1_Test");
         expect(names_of_explorers_detected[1]).toBe("Explorer5_Test");
         expect(names_of_explorers_detected[2]).toBe("Explorer6_Test");
