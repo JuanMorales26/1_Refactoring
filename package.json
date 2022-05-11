@@ -8,7 +8,9 @@
     "test": "jest"
   },
   "scripts": {
-    "test": "node ./node_modules/jest/bin/jest"
+    "test": "node ./node_modules/jest/bin/jest",
+    "linter": "node ./node_modules/eslint/bin/eslint.js .",
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
   },
   "homepage": "https://github.com/JuanMorales26/1_Refactoring#readme",
   "devDependencies": {
+    "eslint": "^8.15.0",
     "jest": "^26.0.0"
   }
 }
